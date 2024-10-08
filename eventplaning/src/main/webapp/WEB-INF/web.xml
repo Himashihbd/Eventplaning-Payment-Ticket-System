@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+    <servlet>
+    	<servlet-name>payment</servlet-name>
+    	<servlet-class>com.eventplaning.paymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>payment</servlet-name>
+    	<url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>card</servlet-name>
+    	<servlet-class>com.eventplaning.cardinsert</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>card</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ticket</servlet-name>
+    	<servlet-class>com.eventplaning.ticketinsert</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>ticket</servlet-name>
+    	<url-pattern>/insertticket</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ticketshow</servlet-name>
+    	<servlet-class>com.eventplaning.ticketshow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ticketshow</servlet-name>
+    	<url-pattern>/show</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>updateticket</servlet-name>
+    	<servlet-class>com.eventplaning.updateticketservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updateticket</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>deleteticket</servlet-name>
+    	<servlet-class>com.eventplaning.deleteticketservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>deleteticket</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+     
+     <servlet>
+    	<servlet-name>cardticket</servlet-name>
+    	<servlet-class>com.eventplaning.cardticketinsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>cardticket</servlet-name>
+    	<url-pattern>/ticket</url-pattern>
+    </servlet-mapping>    
+</web-app>
